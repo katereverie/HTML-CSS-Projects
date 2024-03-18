@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page For Python</title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <main id="main-doc">
+      <fieldset id='navfield'>
+        <nav id="navbar">
+        <header id="navHeader">(Some) Python Tutorial</header>
+        <p id="nav-description">Click the following links for navigation</p>
+        <a class="nav-link" href="#1._data_structures">1. Data Structures</a>
+        <a class="nav-link" href="#2._modules">2. Modules</a>
+        <a class="nav-link" href="#3._input_and_output">3. Input and Output</a>
+        <a class="nav-link" href="#4._errors_and_exceptions">4. Errors and Exceptions</a>
+        <a class="nav-link" href="#5._classes">5. Classes</a>
+      </nav>
+      </fieldset>
+      <section class='main-section' id='1._data_structures' >
+        <header id='main-header'>1. Data Structures</header>
+        <p id='description'>This section describes some common data structures you’ve learned about already in more detail, and adds some new things as well.</p>
+        <li>Lists</li>
+        <p id='description'>The list data type has some more methods. Here are all of the methods of list objects:</p>
+        <p id="item">list.<strong>append(<em>x</em>)</strong></p>
+        <p id="item-description">Add an item to the end of the list. Equivalent to:</p>
+        <div class="code_section">
+          <code>a[len(a):] = [x]</code>
+        </div>
+        <p id='link-description'>For more information, click <a class="other-links" href="https://docs.python.org/3/tutorial/datastructures.html">here</a></p>
+      </section>
+      <section class='main-section' id="2._modules">
+        <header id='main-header'>2. Modules</header>
+        <p id='description'>A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended. Within a module, the module’s name (as a string) is available as the value of the global variable __name__. For instance, use your favorite text editor to create a file called fibo.py in the current directory with the following contents:</p>
+        <li>An Example of A Module</li>
+        <div class="code_section">
+          <code># Fibonacci numbers module<br/><br/><span class="green_bold">def </span><span class="blue_normal">fib</span>(n):    # write Fibonacci series up to n<br/>&nbsp;&nbsp;a, b = 0, 1<br/>&nbsp;&nbsp;<span class="green_bold">while</span> a < n:<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_normal">print</span>(a, end=' ')<br/>&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br/>&nbsp;&nbsp;<span class="green_normal">print</span>()<br/><br/><span class="green_bold">def </span><span class="blue_normal">fib2</span>(n):   # return Fibonacci series up to n<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;result = []<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green_bold">while</span> a < n:<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.append(a)<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="green_bold">return</span> result</code>
+        </div>
+        <p id='link-description'>For more information, click <a class="other-links" href="https://docs.python.org/3/tutorial/modules.html">here</a></p>
+      </section>
+      <section class='main-section' id="3._input_and_output">
+        <header id='main-header'>3. Input and Output</header>
+        <p id='description'>There are several ways to present the output of a program; data can be printed in a human-readable form, or written to a file for future use. This section will discuss one of the possibilities.</p>
+        <li>Manual String Formatting</li>
+        <div class="code_section">
+          <code><span class="green_bold">for</span> x <span class="purple_bold">in</span><span class="green_normal"> range</span>(<span class="grey_normal">1</span>, <span class="grey_normal">11</span>):<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_normal">print</span>(<span class="green_normal">repr</span>(x).rjust(<span class="grey_normal">2</span>), <span class="green_normal">repr</span>(x<span class="grey_normal">*</span>x).rjust(<span class="grey_normal">3</span>), end=' ')<br/>&nbsp;&nbsp;&nbsp;&nbsp; # Note use of 'end' on previous line<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_normal"> print</span>(<span class="green_normal">repr</span>(x<span class="grey_normal">*</span>x<span class="grey_normal">*</span>x).rjust(<span class="grey_normal">4</span>))</code>
+        </div>
+        <p id="description">Output:</p>
+        <div class="code_section">
+          <code>
+            <br/>&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1<br/>&nbsp;2&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;8<br/>&nbsp;3&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;27<br/>&nbsp;4&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;64<br/>&nbsp;5&nbsp;&nbsp;25&nbsp;&nbsp;125<br/>&nbsp;6&nbsp;&nbsp;36&nbsp;&nbsp;216<br/>&nbsp;7&nbsp;&nbsp;49&nbsp;&nbsp;343<br/>&nbsp;8&nbsp;&nbsp;64&nbsp;&nbsp;512<br/>&nbsp;9&nbsp;&nbsp;81&nbsp;&nbsp;729<br/>10 100 1000
+          </code>
+        </div>
+        <p id='link-description'>For more information, click <a class="other-links" href="https://docs.python.org/3/tutorial/inputoutput.html">here</a></p>
+      </section>
+      <section class='main-section' id="4._errors_and_exceptions">
+        <header id='main-header'>4. Errors and Exceptions</header>
+        <p id='description'>Until now error messages haven’t been more than mentioned, but if you have tried out the examples you have probably seen some. There are (at least) two distinguishable kinds of errors: syntax errors and exceptions.</p>
+        <li>Syntaxt Errors</li>
+        <p id='code-description'>Syntax errors, also known as parsing errors, are perhaps the most common kind of complaint you get while you are still learning Python:</p>
+        <div class="code_section">
+          <code>
+            <span class="green_bold">while True </span><span class="green_normal">print</span>(<span class="brown_bold">'Hello world'</span>)<br/>&nbsp;&nbsp;&nbsp;File <span class="brown_bold">"&ltstdin&gt"</span>, line 1<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_bold">while True</span><span class="green_normal"> print</span>(<span class="brown_bold">'Hello world'</span>)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^^^^^<br/>&nbsp;<span class="red_normal">SyntaxError</span>: invalid syntax
+          </code>
+        </div>
+        <code></code>
+        <p id='link-description'>For more information, click <a class="other-links" href="https://docs.python.org/3/tutorial/errors.html">here</a></p>
+      </section>
+      <section class='main-section' id='5._classes'>
+        <header id='main-header'>5. Classes</header>
+        <p id='description'>Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.</p>
+        <li>Scopes and Namespaces Example</li>
+        <p id="code-description">This is an example demonstrating how to reference the different scopes and namespaces, and how global and nonlocal affect variable binding:</p>
+        <div class="code_section">
+          <code>
+            <span class='green_bold'>def </span><span class='blue_normal'>scope_test</span>():<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='green_bold'>def </span><span class='blue_normal'>do_local</span>():<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spam =<span class="brown_normal"> "local spam"</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='green_bold'>def </span><span class='blue_normal'>do_nonlocal</span>():<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='green_bold'>nonlocal </span>spam<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spam =<span class="brown_normal"> "nonlocal spam"</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='green_bold'>def </span><span class='blue_normal'>do_global</span>():<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='green_bold'>global </span>spam</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spam =<span class="brown_normal">"nonlocal spam"</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spam =<span class="brown_normal"> "test spam"</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_local()<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_normal">print</span>(<span class="brown_normal">"After local assignment:"</span>, spam)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_nonlocal()<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_normal">print</span>(<span class="brown_normal">"After nonlocal assignment:"</span>, spam)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do_global()<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green_normal">print</span>(<span class="brown_normal">"After global assignment:"</span>, spam)<br/><br/>&nbsp;scope_test()<br/>&nbsp;<span class="green_normal">print</span>(<span class="brown_normal">"In global scope:"</span>, spam)
+          </code>
+        </div>
+        <p id='link-description'>For more information, click <a class="other-links" href="https://docs.python.org/3/tutorial/classes.html#class-objects">here</a></p>
+      </section>
+    </main>
+  </body>
+</html>

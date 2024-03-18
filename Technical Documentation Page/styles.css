@@ -1,0 +1,131 @@
+html {
+    width: 80%; 
+  }
+  
+  #navfield {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+  }
+  
+  #navHeader {
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 20px 50px 0px;
+    text-align: left;
+  }
+  
+  #main-header {
+    font-family: Verdana;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+  
+  #navbar:not(#navHeader) {
+    text-align: center;
+    padding-right:0;
+    padding-bottom: 100px;
+  }
+  
+  .nav-link {
+    color: blue;
+    padding:18px;
+    text-align: right;
+  }
+  
+  #nav-description {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+  li {
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  #description {
+    padding-left: 5px;
+  }
+  
+  #item {
+    padding-left:20;
+  }
+  
+  .code_section {
+    background-color: f2f2f2;
+    padding-left: 5;
+    width: 100%;
+  }
+  
+  #definition {
+    padding-bottom: 10px;
+  }
+  
+  .green_bold {
+    color: green;
+    font-weight: bold;
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .green_normal {
+    color:green;
+    font-weight: normal;
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .blue_normal {
+    color: blue;
+    font-weight: normal;
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .brown_normal {
+    color: brown;
+    font-weight:normal;
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .brown_bold {
+    color: brown;
+    font-weight:bold;
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .purple_bold {
+    color: purple;
+    font-weight: bold;
+    padding-left:0;
+    padding-right: 0;
+  }
+  
+  .grey_normal {
+    color: grey;
+    font-weight: normal;
+    padding-left:0;
+    padding-right: 0;
+  }
+  
+  .red_normal {
+    color: red;
+    font-weight: normal;
+    padding-left:0;
+    padding-right: 0;
+  }
+  
+  @media (min-width:500px) and (max-width: 1200px) {
+    * {
+      padding: 5px;
+    }
+  }
+  

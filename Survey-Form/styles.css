@@ -1,0 +1,75 @@
+body {
+    margin: auto;
+    padding: 100 100 100 100;
+    background: linen;
+    width: 800px;
+    height: 600px;
+  }
+  
+h1 {
+    display: flex;
+    justify-content: center;
+    font: bold 30px Verdana, sans-serif;
+    top:10px;
+  }
+  
+.frame {
+    font: italic bold 25px "Garamound", sans-serif;
+    text-align: center;
+    padding: 10px;
+    width: 87%;
+    margin-bottom:30px;
+    border-width: 30px;
+    border-image: url("https://github.com/Katereverie/HTML-CSS-Projects/blob/main/Survey-Form/icons/paw_wo_background.png?raw=true") round;
+    border-color: black;
+    border-style: dotted solid;
+  }
+  
+#description::before {
+    content: '" ';
+    font: bold 40px "Garamound", sans-serif;
+  }
+  
+#description::after {
+    content: '  "';
+    font: bold 40px "Garamound", sans-serif;
+  }
+  
+  
+#author {
+    text-align: right;
+    font: normal 30px Helvetica, sans-serif;
+  }
+  
+.field {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    border: 6px solid pink;
+  }
+  
+textarea {
+    width: 50%;
+    height: 80px;
+  }
+  
+  #dropdown {
+    width: 16%;
+    text-align: center;
+  }
+  
+legend {
+    padding: 15px;
+    text-align: center;
+    font: normal 16px Helvetica, sans-serif;
+  }
+  
+#bl {
+    padding: 10px;
+    display: flex;
+    justify-content: flext-end;
+  }
+
+.divider {
+    padding-top: 100px;
+  }

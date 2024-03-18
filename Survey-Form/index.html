@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Pet Personality Survey</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <h1 id='title'>Pet Personality Survey</h1>
+    <div class='frame'>
+      <p id='description'>Know thy Pet!</p>
+      <p id="author">--- So<strong>cat</strong>is</p>
+    </div>
+    <form id='survey-form'>
+      <fieldset class="field">
+        <legend>Owner Information</legend>
+        <label id='name-label'>Name: <input id='name' type='text' name='Name' placeholder='John Doe' required/></label>
+        <label id='email-label'>Email: <input id='email' type='email' name='Email' placeholder='doejohn@gmail.com' required/></label>
+        <label id='number-label'>Age: <input id='number' type='number' name='Age' min='8' max='120' placeholder='8-120' /></label>
+      </fieldset>
+      <fieldset class="field">
+        <legend>Choose The Closest Description of Your Pet's Behavior Around Hoomans?</legend>
+        <select id='dropdown'>
+          <option>(select one)</option>
+          <option>friendly</option>
+          <option>clingy</option>
+          <option>socialite</option>
+          <option>hostile</option>
+          <option>"leave me alone!"</option>
+          <option>avoidant</option>
+          <option>anxious</option>
+          <option>indifferent</option>
+        </select>
+      </fieldset>
+      <fieldset class="field">
+        <legend>What Kind of a Pet Do You Have?</legend>
+        <label id='bl' name='button-label'>Cat <input name='button-label'value='0' type='radio' /></label>
+        <label id='bl' name='button-label'>Dog <input name='button-label' value='60' type='radio' /></label>
+        <label id='bl' name='button-label'>Others <input name='button-label' value='100' type='radio' /></label>
+        <p>If you chose "Others" above, please specify below:</p>
+        <textarea placeholder="Goldfish, crocodile, fox, etc."></textarea>
+      </fieldset>
+      <fieldset class="field">
+        <legend>What Animates Your Pet? (multiple choice)</legend>
+        <label id='bl' name="button-label">Food <input name="button-label" value='0' type='checkbox' /></label>
+        <label id='bl' name="button-label">Me <input name="button-label" value='30' type='checkbox' /></label>
+        <label id='bl' name="button-label">Anything that moves <input name="button-label" value='60' type='checkbox' /></label>
+        <label id='bl' name="button-label">Literally nothing <input name="button-label" value='100' type='checkbox' /></label>
+      </fieldset>
+      <fieldset class="field">
+        <legend>Do You Love Your Pets As They Come?</legend>
+        <label>Declare your manifesto below:<br/></label>
+        <textarea placeholder="I pledge allegiance to my beloved ..."></textarea>
+      </fieldset>
+      <fieldset class="field">
+        <legend>Share Your Manifesto</legend>
+        <label>Do you hereby declare that the disclosed information on your pet is nothing but the truth? <input type="button" value="Absolutely!"></input></label>
+        <label>Do you wish to share with the world the disclosed information? <input id='submit' type="submit" name='submit-button' value="Cant't Wait!"></input></label>
+      </fieldset>
+      <div class="divider"></div>
+      <p>Powered By Katereverie</p>
+    </form>
+  </body>
+</html>
