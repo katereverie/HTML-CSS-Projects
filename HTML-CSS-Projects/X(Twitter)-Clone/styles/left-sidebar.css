@@ -1,0 +1,101 @@
+header img {
+  width: 1.5rem;
+}
+
+.sidebar-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  bottom:0;
+
+  border-right-style: solid;
+  border-right-color: gray;
+  border-right-width: 1px;
+  padding: 5px 10px;
+}
+
+.sidebar-left-top-section {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: 0;
+
+  border: 1px solid red;
+}
+
+.sidebar-left-top-nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  border: 1px solid black;
+  
+  margin-bottom: 30px;
+  margin-right: 80px;
+}
+
+.sidebar-left-top-nav-container img {
+  margin-right: 15px;
+}
+
+.button-container {
+  background-color: rgb(29, 155, 240);
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-right: 20px;
+  text-align: center;
+
+}
+.post-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.sidebar-left-bottom-section {
+
+  position: relative;
+  bottom: 0;
+
+  border: 1px solid red;
+}
+
+.sidebar-left-bottom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+.sidebar-left-bottom-user-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-profile-pic {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.user-domain-name {
+  font-size: 0.6rem;
+}
+
+
+
+
