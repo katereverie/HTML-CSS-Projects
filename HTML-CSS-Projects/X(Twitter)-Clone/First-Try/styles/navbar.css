@@ -8,7 +8,6 @@ nav {
   
   width: 922.5px;
 
-  position: relative;
   margin:0;
 
   display: flex;
@@ -23,10 +22,7 @@ nav {
   align-items: stretch;
   justify-content: space-between;
 
-  position: relative;
-
   width: 275px;
-
 }
 
 .navbar-top-section {
