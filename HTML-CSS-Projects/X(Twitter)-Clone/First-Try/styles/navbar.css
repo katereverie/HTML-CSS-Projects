@@ -1,0 +1,104 @@
+nav img {
+  height: 25px;
+}
+
+nav {
+  border: 1px solid black;
+  box-sizing: border-box;
+  
+  width: 922.5px;
+
+  position: relative;
+  margin:0;
+
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  position: relative;
+
+  width: 275px;
+
+}
+
+.navbar-top-section {
+  height: 728.5px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 259px;
+}
+
+.navbar-item-container img {
+  height: 26.25px;
+  width: 26.25px;
+  padding-right: 20px;
+}
+
+.post-button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14.5px 0;
+  margin-right: 25px;
+  font-size: inherit;
+}
+
+
+.navbar-bottom-section {
+  width: 259px;
+  margin-bottom: 30px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  font-size: 14px;
+}
+
+.user-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-account-setting {
+  margin-right: 10px;
+}
